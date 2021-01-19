@@ -35,7 +35,6 @@ public class Hippo extends Critter {
       return Attack.POUNCE;
   }
   
-  // need to override
   public Color getColor() {
     if (hunger > 0)
       return Color.GRAY;
@@ -43,7 +42,6 @@ public class Hippo extends Critter {
       return Color.WHITE;
   }
   
-  // need to override
   public Direction getMove(String[][] grid) {
     if (steps % 5 == 0) {
       dir = rand.nextInt(4);
